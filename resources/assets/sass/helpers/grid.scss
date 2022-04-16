@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    margin: 0 0 0 -15px;
+    flex-wrap: wrap;
+}
+
+.row > .col {
+    padding: 0 0 0 15px;
+    min-width: 0; // chrome flexbox fix
+}
+
+.col {
+    &-1 {
+        flex: 0 0 8.33%;
+    }
+    &-2 {
+        flex: 0 0 16.66%;
+    }
+    &-3 {
+        flex: 0 0 25%;
+    }
+    &-4 {
+        flex: 0 0 33.33%;
+    }
+    &-5 {
+        flex: 0 0 41.66%;
+    }
+    &-6 {
+        flex: 0 0 50%;
+    }
+    &-7 {
+        flex: 0 0 58.33%;
+    }
+    &-8 {
+        flex: 0 0 66.66%;
+    }
+    &-9 {
+        flex: 0 0 75%;
+    }
+    &-10 {
+        flex: 0 0 83.33%;
+    }
+    &-11 {
+        flex: 0 0 91.66%;
+    }
+    &-12 {
+        flex: 0 0 100%;
+    }
+}

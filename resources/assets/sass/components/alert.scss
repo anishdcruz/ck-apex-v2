@@ -1,0 +1,16 @@
+.alert {
+    width: 100%;
+    padding: 15px;
+    &-success {
+        background: $color_success;
+        color: #fff;
+    }
+    &-info {
+        background: lighten($color_primary, 39%);
+        color: $color_primary;
+    }
+    &-danger {
+        background: lighten($color_danger, 35%);
+        color: $color_danger;
+    }
+}

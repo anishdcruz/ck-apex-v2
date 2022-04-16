@@ -1,0 +1,28 @@
+.sidebar {
+    background: #28304C;
+    &-inner {
+        height: 100%;
+        overflow-y: scroll;
+    }
+    &-links {
+        height: 100%;
+    }
+    &-list {
+        padding: 0;
+        margin: 0;
+        li {
+            display: block;
+        }
+    }
+    &-break {
+        height: 1px;
+        margin: 10px;
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 14px;
+        color: #f5ede5;
+    }
+}

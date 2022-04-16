@@ -1,0 +1,83 @@
+.status {
+    display: inline-block;
+    text-align: center;
+    font-size: 9px;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: #fff;
+    &-draft {
+        background: $status_grey;
+    }
+    &-received {
+        background: $status_blue_dark;
+    }
+    &-partially-received {
+        background: $status_orange;
+    }
+    &-issued {
+        background: $status_blue_dark;
+    }
+    &-partially-issued {
+        background: $status_orange;
+    }
+    &-sent {
+        background: $status_blue_light;
+    }
+    &-invoiced {
+        background: $status_blue_dark;
+    }
+    &-billed {
+        background: $status_blue_dark;
+    }
+     &-deposited {
+        background: $status_blue_dark;
+    }
+    &-sales-ordered {
+        background: $status_blue_dark;
+    }
+    &-drawn {
+        background: $status_green;
+    }
+    &-partially-drawn {
+        background: $status_orange;
+    }
+    &-paid {
+        background: $status_blue_dark;
+    }
+    &-declined {
+        background: $status_red;
+    }
+    &-void {
+        background: $status_red;
+    }
+    &-cancelled {
+        background: $status_red;
+    }
+    &-accepted {
+        background: $status_green;
+    }
+    &-confirmed {
+        background: $status_blue_dark;
+    }
+    &-partially-paid {
+        background: $status_green;
+    }
+    &-orange {
+        background: $status_orange;
+    }
+     &-on-hold {
+        background: $status_orange;
+    }
+    &-closed {
+        background: $status_green;
+    }
+    &-open {
+        background: $status_orange;
+    }
+    &-new {
+        background: $status_green;
+    }
+}

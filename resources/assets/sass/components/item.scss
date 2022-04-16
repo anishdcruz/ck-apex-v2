@@ -1,0 +1,92 @@
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            th {
+                text-align: left;
+                padding: 8px 0px;
+                font-weight: bold;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                vertical-align: top;
+                margin: 0;
+                padding: 10px 10px 0px 0px;
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+    tfoot {
+        tr {
+            td {
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.item-empty {
+    padding: 10px 10px 0px 0px!important;
+}
+
+.item-remove {
+    display: block;
+    color: $color_danger;
+    background: transparent;
+    border: none;
+    padding: 0;
+    &:focus {
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-offset: 1px;
+        outline-color: $color_primary;
+    }
+    &:active {
+        box-shadow: inset $box_shadow;
+    }
+}
+
+.item-footer {
+    padding-top: 15px!important;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    text-align: right;
+    padding-right: 19px!important;
+}
+
+.item-dark {
+    background: #f5f5f5!important;
+}
+
+.item-tax {
+    td {
+        text-align: right;
+        padding-right: 16px!important;
+        color: darken($color_primary, 20%);
+    }
+}
+.item-tax-show {
+    td {
+        background: #fff;
+        text-align: right;
+        color: darken($color_primary, 20%);
+    }
+}
+.item-selected-tax {
+    td {
+        color: darken($color_primary, 20%);
+    }
+}
+
+.item-footer_line {
+    padding: 10px!important;
+    border-bottom: 1px solid $border_light;
+}

@@ -1,0 +1,29 @@
+@import "reset";
+@import "settings";
+@import "elements";
+
+@import "components/index";
+@import "helpers/index";
+@import "layouts";
+
+@import "node_modules/font-awesome/css/font-awesome";
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: $bg_default;
+    color: $color_text;
+    height: 100%;
+    font-family: $font_family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+    line-height: 1.2em;
+}
+

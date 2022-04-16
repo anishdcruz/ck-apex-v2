@@ -1,0 +1,34 @@
+.main {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &-content {
+        display: flex;
+        height: 100%;
+    }
+}
+
+.sidebar {
+    width: 17%;
+}
+
+.main-view {
+    width: 83%;
+}
+
+.layout {
+    position: relative;
+    padding: 15px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}

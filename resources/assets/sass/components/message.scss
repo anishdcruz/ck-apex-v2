@@ -1,0 +1,53 @@
+.message {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: $box_shadow;
+    &-group {
+        z-index: 99;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 300px;
+    }
+    &-success {
+        padding: 15px;
+        width: 100%;
+        background: $color_success;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-info {
+        padding: 15px;
+        width: 100%;
+        background: $color_primary;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-plain {
+        padding: 15px;
+        width: 100%;
+        background: #fff;
+        color: $color_text;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-danger {
+        padding: 15px;
+        width: 100%;
+        background: $color_danger;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa {
+        cursor: pointer;
+    }
+}

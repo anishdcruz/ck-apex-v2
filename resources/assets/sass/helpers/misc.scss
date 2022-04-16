@@ -1,0 +1,95 @@
+.bg {
+    &-grey {
+        background: #fbfbfb;
+        padding: 20px 15px;
+    }
+}
+
+.align {
+    &-center {
+        text-align: center!important;
+    }
+    &-left {
+        text-align: left!important;
+    }
+    &-right {
+        text-align: right!important;
+    }
+}
+
+.progress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 2px;
+  width: 0%;
+  transition: width 0.2s, opacity 0.4s;
+  opacity: 1;
+  background-color: #03a9f4;
+  z-index: 999999;
+  &-spinner {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+
+.spinner svg {
+    width: 48px;
+    height: 48px;
+    display:inline-block;
+}
+
+.search-box {
+  position: relative;
+}
+.search-clear {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  z-index: 9;
+}
+
+.image-preview {
+  background: #fafafa;
+  border: 2px dashed rgba(0,0,0,0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-icon {
+
+}
+
+.image-close {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  color: $color_danger;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.login-page {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.login-brand {
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}

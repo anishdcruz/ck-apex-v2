@@ -1,0 +1,272 @@
+@import "reset";
+@import "settings";
+@import "elements";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $color_text;
+    font-family: $font_family;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 25px;
+}
+
+.document-table tbody tr    {
+    page-break-inside:avoid;
+    page-break-after:auto;
+}
+
+.document {
+    &-body {
+        padding: 15px 0px;
+    }
+}
+.document-summary {
+    width: 100%;
+    border-collapse: collapse;
+    tbody {
+        tr {
+            td {
+                vertical-align: top;
+                padding-bottom: 5px;
+                text-align: right;
+            }
+            td:nth-child(2n) {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+.align {
+    &-center {
+        text-align: center!important;
+    }
+    &-left {
+        text-align: left!important;
+    }
+    &-right {
+        text-align: right!important;
+    }
+}
+
+.document-type {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.document-blue {
+    background: #3aa3e3;
+    color: #fff;
+}
+
+.document-orange {
+    background: #FF9800;
+    color: #fff;
+}
+
+.document-red {
+    background: #E75650;
+    color: #fff;
+}
+
+.document-blue_light {
+    background: #48606f;
+    color: #fff;
+}
+
+.document-green {
+    background: #66bb6a;
+    color: #fff;
+}
+
+.document-table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            th {
+                text-align: left;
+                padding: 7px 5px;
+                background: $color_grey_dark;
+                color: #fff;
+                border-right: 1px solid #444;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                vertical-align: top;
+                padding: 8px;
+                border-bottom: 1px solid $border_light;
+                border-right: 1px solid $border_light;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $border_light;
+            }
+        }
+    }
+    tfoot {
+        tr {
+            td {
+                vertical-align: top;
+                padding: 10px 7px 5px 10px;
+                &:last-child {
+                    border-right: none;
+                }
+                &:nth-child(2n) {
+                    text-align: right;
+                    padding-right: 0px!important;
+                }
+            }
+        }
+    }
+}
+
+.document-term {
+    strong {
+        font-size: 80%;
+        line-height: 1.2em;
+    }
+    pre {
+        font-size: 80%;
+        line-height: 1.2em;
+    }
+    margin-top: 4px;
+}
+
+.row {
+    width: 100%;
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+
+.col {
+    &-1 {
+        width: 8.33%;
+    }
+    &-2 {
+        width: 16.66%;
+    }
+    &-3 {
+        width: 25%;
+    }
+    &-4 {
+        width: 33.33%;
+    }
+    &-5 {
+        width: 41.66%;
+    }
+    &-6 {
+        width: 50%;
+    }
+    &-7 {
+        width: 58.33%;
+    }
+    &-8 {
+        width: 66.66%;
+    }
+    &-9 {
+        width: 75%;
+    }
+    &-10 {
+        width: 83.33%;
+    }
+    &-11 {
+        width: 91.66%;
+    }
+    &-12 {
+        width: 100%;
+    }
+}
+
+.width {
+    &-1 {
+        width: 8.33%;
+    }
+    &-2 {
+        width: 16.66%;
+    }
+    &-3 {
+        width: 25%;
+    }
+    &-4 {
+        width: 33.33%;
+    }
+    &-5 {
+        width: 41.66%;
+    }
+    &-6 {
+        width: 50%;
+    }
+    &-7 {
+        width: 58.33%;
+    }
+    &-8 {
+        width: 66.66%;
+    }
+    &-9 {
+        width: 75%;
+    }
+    &-10 {
+        width: 83.33%;
+    }
+    &-11 {
+        width: 91.66%;
+    }
+    &-12 {
+        width: 100%;
+    }
+}
+
+.document-attachment {
+    page-break-before: always;
+    text-align: center;
+    img{
+        page-break-inside: avoid;
+        max-width: 100%;
+        max-height: 800px;
+    }
+}
+.item-tax {
+    td {
+        background: #fff;
+        text-align: right;
+        color: darken($color_primary, 20%);
+    }
+}
+
+.item-footer {
+    border: none!important;
+    background: none!important;
+    td {
+        border: none!important;
+        text-align: right!important;
+    }
+}

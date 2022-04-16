@@ -1,0 +1,94 @@
+.form {
+    &-group,
+    &-checkbox {
+        padding: 8px 0px;
+    }
+}
+
+.form-control {
+    color: $color_text;
+    line-height: 13px;
+    font-size: 13px;
+    height: 32px;
+    background: #fafafa;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.01);
+    border-radius: 1px;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.1);
+    padding: 8px;
+    width: 100%;
+    display: block;
+    &:focus {
+        box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.2);
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-offset: 1px;
+        outline-color: $color_primary;
+    }
+    &[disabled] {
+        opacity: 0.75;
+        cursor: not-allowed;
+    }
+}
+.form-email {
+    height: 300px!important;
+    line-height: 1.2em;
+}
+
+textarea.form-control {
+    height: 102px;
+}
+
+.form-inline {
+    display: inline-block;
+    width: initial;
+}
+
+.form-sm {
+    height: 26px;
+    padding: 4px 8px;
+}
+
+.error {
+    &-control {
+        color: #e53935;
+    }
+    &-bg {
+        .form-control {
+            background: rgba(255, 205, 210, 0.65) !important;
+        }
+    }
+}
+
+.form-group{
+    label {
+        font-weight: bold;
+        margin-bottom: 7px;
+        display: flex;
+        justify-content: space-between;
+        small {
+            font-weight: normal;
+        }
+        a {
+            font-weight: normal;
+            color: $color_primary;
+            font-size: 80%;
+        }
+    }
+}
+
+.form-check {
+    margin-bottom: 7px;
+    label {
+        display: block;
+    }
+}
+
+.form-serials {
+    padding: 10px 0 0 10px;
+    text-align: right;
+}
+
+.form-dark {
+    background: #efefef;
+}

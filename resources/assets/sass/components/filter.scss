@@ -1,0 +1,60 @@
+.filter {
+    display: flex;
+
+    &-title {
+        display: block;
+        margin-bottom: 10px;
+    }
+    &-items {
+        flex: 4;
+    }
+    &-item {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &-controls {
+        flex: 1;
+    }
+    &-column {
+        flex: 5;
+        padding-right: 10px;
+    }
+    &-operator {
+        flex: 4;
+        padding-right: 10px;
+    }
+    &-query_1 {
+        flex: 5;
+        padding-right: 10px;
+    }
+    &-query_full {
+        flex: 10;
+        padding-right: 10px;
+    }
+    &-query_2 {
+        flex: 5;
+        padding-right: 10px;
+    }
+    &-remove {
+        flex: 1;
+        button {
+            display: block;
+            color: $color_danger;
+            background: transparent;
+            border: none;
+            padding: 0;
+            font-size: 15px;
+            &:focus {
+                outline-style: dotted;
+                outline-width: 1px;
+                outline-offset: 1px;
+                outline-color: #333;
+            }
+            &:active {
+                box-shadow: inset $box_shadow;
+            }
+        }
+    }
+}

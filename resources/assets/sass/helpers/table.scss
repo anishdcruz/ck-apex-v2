@@ -1,0 +1,40 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            th {
+                text-align: left;
+                border-bottom: 2px solid $border_light;
+                padding: 8px;
+                font-weight: bold;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-top: 1px solid $border_light;
+            td {
+                vertical-align: top;
+                padding: 8px;
+            }
+            &:nth-of-type(odd) {
+                background-color: $bg_grey_light;
+            }
+        }
+    }
+}
+
+.table-no_results {
+    text-align: center;
+    height: 200px;
+    vertical-align: middle!important;
+}
+
+.table-link {
+    tbody {
+        td {
+            cursor: pointer;
+        }
+    }
+}
